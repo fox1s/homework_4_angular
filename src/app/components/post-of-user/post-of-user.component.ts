@@ -11,6 +11,7 @@ export class PostOfUserComponent implements OnInit {
 
   posts: IPosts[];
   idOfUser;
+
   constructor(private activatedRoute: ActivatedRoute, private router: Router) {
     this.activatedRoute.params.subscribe(value => {
       this.idOfUser = this.router.getCurrentNavigation().extras.state.id;
@@ -20,7 +21,6 @@ export class PostOfUserComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.posts);
   }
 
 }

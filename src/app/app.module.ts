@@ -17,7 +17,7 @@ import { PostOfUserIterationComponent } from './components/post-of-user-iteratio
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'all-posts', component: PostsComponent},
+  {path: 'all-posts', component: PostsComponent, resolve: {postsData: PostsResolveService}},
   {
     path: 'users', component: UsersComponent, resolve: {usersData: UserResolveService}, children: [
       {path: ':id', component: FullUserComponent, children: [
