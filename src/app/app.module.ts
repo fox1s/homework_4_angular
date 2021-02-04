@@ -13,6 +13,7 @@ import {HomeComponent} from './components/home/home.component';
 import {FullUserComponent} from './components/full-user/full-user.component';
 import { PostOfUserComponent } from './components/post-of-user/post-of-user.component';
 import {PostsResolveService} from './services/posts-resolve.service';
+import { PostOfUserIterationComponent } from './components/post-of-user-iteration/post-of-user-iteration.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -36,7 +37,8 @@ const routes: Routes = [
     UsersComponent,
     HomeComponent,
     FullUserComponent,
-    PostOfUserComponent
+    PostOfUserComponent,
+    PostOfUserIterationComponent
   ],
   imports: [
     BrowserModule,
